@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Video Player</title>
+	<meta charset="utf-8" />
+    <meta name="description" content="Simple Video Player. OnRewind technical test">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Cristina Cancelado Gonzalez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="scripts/MyVideoPlayer.js"></script>
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <h1>Simple Video Player</h1>
+    <h2>OnRewind Technical Test</h2>
+    <div id="video_player_box">
+        <video id="theVideo" autoplay="" name="media">
+            <source src="https://s3-eu-west-1.amazonaws.com/onrewind-test-bucket/big_buck_bunny.mp4" type="video/mp4" autoplay>
+        </video>
+        <div id="video_control_bar">
+            <button id="playPauseButton"></button>
+            <input id="seekbar" type="range" min="0" max="100" value="0">
+            <span id="currentTime"></span> / <span id="totalTime"></span>
+            <button id="muteButton"></button>
+            <input id="volumeSlider" type="range" min="0" max="100" value="100">
+            <button id="fullscreenButton"></button>
+        </div>
+    </div>
+</body>
+</html>
